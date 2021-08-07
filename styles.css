@@ -1,0 +1,177 @@
+body {
+	font-family: "Noto Sans", sans-serif;
+	background: #caebf2;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Roboto Mono", monospace;
+}
+
+/*3 types of selectors*/
+/*This is an "Element selector"*/
+/*An element selector selects one or more of a particular HTML element. 
+An example of an element selector would be p { }, 
+which, as we saw, styles all the paragraph (<p>) elements on a page.*/
+p {
+	color: black
+}
+h3 {
+	color: black
+}
+
+/*This is a .Class selector*/
+/*A class selector targets all elements that have a particular class name.*/
+.class-list-items{
+	font-style: italic;
+
+/*This is an #ID selector*/
+/*ID selectors are quite similar to class selectors, 
+except that we set an ID to an HTML element using the id attribute 
+and select it in CSS using the hash or pound character before the ID name.*/
+}
+#my-name{
+	color: black
+}
+
+/*class attribute called ‘quote’. 
+Classes are used to define particular styles for all of the elements 
+that share the same class name. */
+p {
+	font-style: italic;
+}
+
+.quote {
+	font-style: italic;
+}
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+.container > div {
+	margin: 20px auto;
+}
+
+.intro {
+	text-align: center;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.i-am, .i-like {
+	text-align: center;
+}
+
+.about-list {
+	list-style: none;
+}
+
+@media (max-width: 480px) {
+	.about-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+.projects-heading {
+	text-align: center;
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.project-image-wrapper {
+	justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.project-image {
+	border-radius: 5px;
+	box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
+	transition: all ease-in-out .2s;
+}
+
+.project-image:hover {
+	filter: brightness(.75);
+	box-shadow: 0 8px 12px 0 rgb(34, 60, 80, 0.16);
+}
+
+.project-image-wrapper:hover > h4 {
+	visibility: visible;
+}
+
+.project-image-wrapper:hover > h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
+}
+
+@media (max-width: 650px) {
+	.projects-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+.links-and-contact {
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+.links {
+	justify-self: center;
+}
+
+.links-list {
+	list-style: none;
+	padding: 0;
+}
+@media (max-width: 650px) {
+	.links-and-contact {
+		grid-template-columns: 100%;
+	}
+}
+
+.profile-picture {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
+	transition: all ease-in-out .2s;
+}
+
+.profile-picture:hover {
+	box-shadow: 0 8px 12px 0 rgb(34, 60, 80, 0.16);
+}
+
+form input, textarea {
+	padding: 5px;
+	border-radius: 5px;
+	width: 240px;
+}
+
+form input [type="submit"] {
+	width: 240px;
+}
+
+.submit-button-wrapper {
+	margin: 20px 0;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+/*Youtube tutorial Beginners: https://www.youtube.com/watch?v=F_feF3-NGtQ&list=PL4GEkVtNYGlJUe7foYmnWN1UgAiMkhlIn&index=3 */
+/* Youtube tutorial Advanced: https://www.youtube.com/watch?v=8MCjAktqZaM&list=PL4GEkVtNYGlJUe7foYmnWN1UgAiMkhlIn&index=4 */
