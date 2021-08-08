@@ -1,5 +1,5 @@
 # My very first website
-- Build my very first website following tutorial to get a taste of web development prior to going into it.
+- Build my very first website following a tutorial to get a taste of web development prior to learning it fully.
 - https://mycodingjournal.github.io/firstWebsite/
 
 # Website type
