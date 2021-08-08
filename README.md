@@ -8,4 +8,5 @@
 - HTML
 - CSS
 - Javascript
-<img src="">
+
+<img src="./images/firstWebsite.PNG" height="550px">
