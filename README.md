@@ -1,6 +1,6 @@
 # My very first website
 - Build First website following a tutorial to get a taste of web development prior to diving in.
-- https://mycodingjournal.github.io/firstWebsite/
+- https://jayz-lab.github.io/firstWebsite/
 
 # Website type
 - Portfolio
